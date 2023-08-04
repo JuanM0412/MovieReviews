@@ -1,15 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Welcome to Home Page, <span style="color: mediumaquamarine;">{{name}}</span></h1>
-            <h2>This is the full home page</h2>
-        </div>
-    </body>
-</html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <div class="mb-3">
+                <label for="searchMovie" class="form-label">
+                    Search for Movie:
+                </label>
+                <input type="text" class="form-control" mame="searchMovie">
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+
+        <p>Searching for {{ searchTerm }}</p>
+    </div>
+</body>

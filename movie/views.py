@@ -3,7 +3,8 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, 'home.html', {'name': 'Juan Manuel Gómez'})
+    searchTerm = request.GET.get('searchMovie')
+    return render(request, 'home.html', {'searchTerm': searchTerm})
 
 
 def about(request):
